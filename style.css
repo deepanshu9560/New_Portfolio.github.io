@@ -638,6 +638,12 @@ footer a:hover {
     }
 }
 
+@media (max-width: 550px){
+    .about-img-wrapper {
+        height: 380px;
+    }
+}
+
 @media (max-width: 500px) {
     .about-img-wrapper {
         height: 380px;
