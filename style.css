@@ -522,15 +522,15 @@ footer a:hover {
     }
 
     /* .navbar-bt-section-img-wrapper {
-        width: 70%;
-        height: 100%;
-    }
+    width: 70%;
+    height: 100%;
+}
 
-    .navbar-bt-text-section {
-        width: 100%;
-        max-width: 670px;
-        margin: 0px 0 0 0;
-    } */
+.navbar-bt-text-section {
+    width: 100%;
+    max-width: 670px;
+    margin: 0px 0 0 0;
+} */
     .about-sec-wrapper {
         flex-wrap: wrap;
         justify-content: center;
@@ -638,6 +638,28 @@ footer a:hover {
     }
 }
 
+@media (max-width: 500px) {
+    .about-img-wrapper {
+        height: 380px;
+    }
+
+    .about-sec-text h1 {
+        font-size: 27px;
+    }
+
+    .about-heading-wrapper>.about-me-wrapper>h1 {
+        font-size: 25px;
+    }
+
+    .about-extra-space {
+        width: 100px;
+    }
+
+    .about-extra-space:after {
+        width: 35px;
+    }
+}
+
 @media (max-width: 455px) {
     .navbar-bt-section-img-wrapper {
         width: 100%;
@@ -662,6 +684,16 @@ footer a:hover {
     }
 }
 
+@media (max-width: 400px) {
+    .about-img-wrapper {
+        height: 100px;
+    }
+
+    .about-sec-text p {
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 380px) {
     .navbar-bt-text-section {
         width: 350px;
@@ -679,11 +711,23 @@ footer a:hover {
     .navbar-bt-text-section p {
         font-size: 20px;
     }
+
+    .about-img-inner {
+        width: 90%;
+    }
 }
 
 @media (max-width: 350px) {
     .navbar-bt-text-section {
         width: 300px;
         min-height: 300px;
+    }
+
+    .about-sec-text h1 {
+        font-size: 23px;
+    }
+
+    .about-sec-text p {
+        font-size: 15px;
     }
 }
