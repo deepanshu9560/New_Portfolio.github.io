@@ -25,7 +25,7 @@ $('.hamburger').click(function () {
 
 jQuery("document").ready(function ($) {
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 50) {
+        if ($(this).scrollTop() > 30) {
             $('body').addClass("fixed");
         } else {
             $('body').removeClass("fixed");
