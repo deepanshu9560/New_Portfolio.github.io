@@ -15,6 +15,8 @@
     <!-- three js -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
         integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <script defer src="typed.js"></script>
     <script defer src="index.js"></script>
@@ -25,22 +27,30 @@
     <div class="def-cur">
         <div class="small-c"></div>
     </div>
-    <nav class="navbar">
-        <div class="container">
+    <div class="overlay"></div>
+    <div class="nav-fixed">
+        <nav class="navbar">
+            <div class="container">
 
-            <div class="hd-logo-wrapper">
-                <h1 class="hd-logo">Port<span>folio.</span></h1>
+                <div class="hd-logo-wrapper">
+                    <h1 class="hd-logo">Port<span>folio.</span></h1>
+                    <div class="hamburger">
+                        <span class="span1"></span>
+                        <span class="span2"></span>
+                        <span class="span3"></span>
+                    </div>
+                </div>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">My work</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Skills</a></li>
+                </ul>
             </div>
-
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">My work</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Skills</a></li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
     <div class="navbar-bt-section" style="background-image: url(wave.png);">
         <div class="container">
