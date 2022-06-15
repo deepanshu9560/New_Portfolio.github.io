@@ -10,40 +10,45 @@ let example0 = new Typed("#dev", {
 
 var cur = document.querySelector('.def-cur');
 
-document.addEventListener('mousemove', function(event){
+document.addEventListener('mousemove', function (event) {
     console.log(event);
     var x = event.pageX;
     var y = event.pageY;
-    cur.style.top = (y-cur.offsetHeight/2)+'px';
-    cur.style.left = (x-cur.offsetHeight/2)+'px'; 
+    cur.style.top = (y - cur.offsetHeight / 2) + 'px';
+    cur.style.left = (x - cur.offsetHeight / 2) + 'px';
 })
 
-TweenMax.from('.navbar ul' , 1,{
+$('.hamburger').click(function () {
+    $('nav.navbar ul').slideToggle(250);
+    $('body').toggleClass('active');
+});
+
+TweenMax.from('.navbar ul', 1, {
     delay: 0.1,
     opacity: 0,
-    x: "100%",  
+    x: "100%",
     ease: Expo.easeInOut
 })
 
-TweenMax.from('.navbar-bt-section-img-wrapper img' , 1.5,{
+TweenMax.from('.navbar-bt-section-img-wrapper img', 1.5, {
     delay: 0.5,
-    y: "-200%",   
+    y: "-200%",
     ease: Expo.easeInOut
 })
 
-TweenMax.from('.navbar-bt-text-section h2' , 1,{
+TweenMax.from('.navbar-bt-text-section h2', 1, {
     delay: 1,
     y: "200%",
     ease: Expo.easeInOut
 })
 
-TweenMax.from('.navbar-bt-text-section h1' , 1.5,{
+TweenMax.from('.navbar-bt-text-section h1', 1.5, {
     delay: 1.3,
     x: "200%",
     ease: Expo.easeInOut
 })
 
-TweenMax.from('.navbar-bt-text-section p' , 1,{
+TweenMax.from('.navbar-bt-text-section p', 1, {
     delay: 2.3,
     opacity: 0,
     ease: Expo.easeInOut
@@ -61,5 +66,8 @@ TweenMax.from('.hd-logo' , 1.5,{
 
 
 
-   
+
+
+
+
 
