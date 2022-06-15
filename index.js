@@ -23,6 +23,16 @@ $('.hamburger').click(function () {
     $('body').toggleClass('active');
 });
 
+jQuery("document").ready(function ($) {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            $('body').addClass("fixed");
+        } else {
+            $('body').removeClass("fixed");
+        }
+    });
+});
+
 TweenMax.from('.navbar ul', 1, {
     delay: 0.1,
     opacity: 0,
@@ -54,10 +64,10 @@ TweenMax.from('.navbar-bt-text-section p', 1, {
     ease: Expo.easeInOut
 })
 
-TweenMax.from('.hd-logo' , 1.5,{
+TweenMax.from('.hd-logo', 1.5, {
     delay: 0.8,
     opacity: 0,
-    y: "100%",  
+    y: "100%",
     ease: Expo.easeInOut
 })
 
