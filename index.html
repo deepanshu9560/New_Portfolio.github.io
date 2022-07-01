@@ -9,6 +9,7 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio">
     <meta name="author" content="Deepanshu">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Portfolio</title>
     <!-- icons -->
     <script defer src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
@@ -45,11 +46,11 @@
                 </div>
 
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">My work</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li class="active"><a href="index.html" onclick="ankerActive(this)">Home</a></li>
+                    <li><a href="about.html" onclick="ankerActive(this)">About</a></li>
+                    <li><a href="#" onclick="ankerActive(this)">My work</a></li>
+                    <li><a href="#" onclick="ankerActive(this)">Contact</a></li>
+                    <li><a href="#" onclick="ankerActive(this)">Skills</a></li>
                 </ul>
             </div>
         </nav>
@@ -148,7 +149,7 @@
             <div class="footer-copyright">Created By Deepanshu chauhan | 2022 All rights reserved.</div>
         </div>
     </footer>
-    
+
 </body>
 
 </html>
