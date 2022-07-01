@@ -539,6 +539,13 @@ footer a:hover {
     .navbar-bt-text-section {
         margin: 10px 0 0 0;
     }
+    * {
+        cursor: default;
+    }
+
+    .def-cur {
+        display: none;
+    }
 }
 
 @media (max-width: 1099px) {
@@ -617,11 +624,11 @@ footer a:hover {
 
 @media (max-width: 767px) {
     .nav-fixed {
-        min-height: 82px;
+        min-height: 72px;
     }
 
     nav.navbar .container {
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
 
     nav.navbar {
@@ -677,13 +684,7 @@ footer a:hover {
         display: none;
     }
 
-    * {
-        cursor: default;
-    }
 
-    .def-cur {
-        display: none;
-    }
 
     .hd-logo-wrapper {
         display: flex;
