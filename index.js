@@ -73,6 +73,25 @@ TweenMax.from('.hd-logo', 1.5, {
 
 
 
+let ankActive = document.querySelectorAll('.navbar ul li');
+
+function ankerActive(get){
+    ankActive.forEach((curr)=>{
+        curr.classList.remove('active');    
+    });    
+    get.parentNode.classList.add('active'); 
+};
+
+TweenMax.from('.about-about-section .about-img-wrapper', 2, {
+    delay: 0.1,
+    opacity: 0,
+    x: "-100%",
+    ease: Expo.easeInOut
+})
+
+
+
+
 
 
 
