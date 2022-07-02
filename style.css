@@ -8,6 +8,10 @@
     cursor: none;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .about-navbar-bt-section {
     display: none !important;
 }
