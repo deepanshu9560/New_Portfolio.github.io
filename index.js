@@ -64,12 +64,12 @@ TweenMax.from('.navbar-bt-text-section p', 1, {
     ease: Expo.easeInOut
 })
 
-TweenMax.from('.hd-logo', 1.5, {
-    delay: 0.8,
-    opacity: 0,
-    y: "100%",
-    ease: Expo.easeInOut
-})
+ TweenMax.from('.hd-logo', 1.9, {
+      delay: 0.8,
+      opacity: 0,
+      x: "-100%",
+      ease: Expo.easeInOut
+ })
 
 
 
