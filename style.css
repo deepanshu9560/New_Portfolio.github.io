@@ -16,8 +16,7 @@
 }
 
 body {
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow-x: hidden;    
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
         scroll-behavior: smooth;
